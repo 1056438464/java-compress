@@ -5,6 +5,7 @@
 ### 参数
 1、你要压缩的文件夹名
 2、zip文件流
+3、是否保存路径原有目录结构 true/false
 
 例
 ```java
@@ -17,7 +18,6 @@
             File file1 = new File(path);
             zipUtil zip = new zipUtil();
             zip.toZip(path, zos, true);
-            zip.compress(file1, zos, file1.getName(), true);
 
         } catch (Exception e) {
 
