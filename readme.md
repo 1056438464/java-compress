@@ -16,8 +16,9 @@
         try {
             String path = "D:\\ps";
             File file1 = new File(path);
-            zipUtil zip = new zipUtil();
-            zip.toZip(path, zos, true);
+     
+            //zipUtil.toZip(path, zos, true);
+            zipUtil.compress(file1, zos, file1.getName(), true);
 
         } catch (Exception e) {
 
@@ -25,7 +26,9 @@
 
         } finally {
 
-            os.close();
             zos.closeEntry();
+            zos。close();
+            os.close();
+             
         }
 ```
