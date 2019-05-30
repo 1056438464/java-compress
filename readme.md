@@ -27,7 +27,7 @@
         } finally {
 
             zos.closeEntry();
-            zos。close();
+            zos.close();
             os.close();
              
         }
